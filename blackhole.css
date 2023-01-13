@@ -1,0 +1,105 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+.blackhole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.blackhole img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  animation: blackhole 10s infinite linear;
+}
+
+.astronaut {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(35%, -50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.astronaut_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  animation: astronaut 10s infinite linear;
+}
+
+.face_container {
+  transform: rotate(-10deg);
+}
+
+.face {
+  position: absolute;
+  top: 27%;
+  left: 38.5%;
+  transform: rotate(-180deg);
+  width: 90px;
+  border-radius: 50%;
+  animation: astronaut 10s infinite linear;
+  mask-mode: alpha;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+}
+
+.countdown-item {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes astronaut {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, calc(-50% + 50px));
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes blackhole {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
