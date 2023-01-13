@@ -45,7 +45,7 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  animation: astronaut 10s infinite linear;
+  animation: astronaut 10s infinite;
 }
 
 .face_container {
@@ -59,7 +59,7 @@ body {
   transform: rotate(-180deg);
   width: 90px;
   border-radius: 50%;
-  animation: astronaut 10s infinite linear;
+  animation: astronaut 10s infinite;
   mask-mode: alpha;
 }
 
