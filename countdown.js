@@ -1,7 +1,7 @@
 function gettime() {
   var date = new Date();
   var time = date.getTime() / 1000;
-  time = 1673996400 - Math.floor(time);
+  time = 1673946000 - Math.floor(time);
   return time;
 }
 
